@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PanelDebugGUI
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: 7a16858dc68bd4b75bfdd3067efd99cb, type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: speedMultiplier
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: fontSize
+    value: 45
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: showRect.x
+    value: 18
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: showRect.y
+    value: 18
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: showRect.width
+    value: 540
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: showRect.height
+    value: 90
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: hideRect.x
+    value: 18
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: hideRect.y
+    value: 126
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: hideRect.width
+    value: 540
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: hideRect.height
+    value: 90
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: openRect.x
+    value: 18
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: openRect.y
+    value: 234
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: openRect.width
+    value: 540
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: openRect.height
+    value: 90
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: openWithSpeedRect.x
+    value: 18
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: openWithSpeedRect.y
+    value: 342
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: openWithSpeedRect.width
+    value: 540
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: openWithSpeedRect.height
+    value: 90
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: closeRect.x
+    value: 18
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: closeRect.y
+    value: 450
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: closeRect.width
+    value: 540
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: closeRect.height
+    value: 90
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: closeWithSpeedRect.x
+    value: 18
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: closeWithSpeedRect.y
+    value: 558
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: closeWithSpeedRect.width
+    value: 540
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: closeWithSpeedRect.height
+    value: 90
+    objectReference: {fileID: 0}
+  m_ExcludedProperties: []
