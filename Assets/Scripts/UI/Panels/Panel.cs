@@ -4,8 +4,8 @@ using UnityEngine;
 public class Panel : MonoBehaviour
 {
     [SerializeField]
-    [Range(0.1f, 10f)]
-    private float defaultSpeedMultiplier = 1f;
+    [Range(0.05f, 20f)]
+    private float defaultSpeedMultiplier = 10f;
 
     public float DefaultSpeedMultiplier
     {
@@ -20,8 +20,12 @@ public class Panel : MonoBehaviour
 
         private set
         {
-            var v = Mathf.Clamp(value, 0.1f, 10f);
-            Animator.SetFloat("Initial Speed Multiplier", v);
+            if (value < 0.05f || value > 20f)
+            {
+                Mathf.Clamp(value, 0.05f, 20f);
+            }
+
+            Animator.SetFloat("Initial Speed Multiplier", value);
         }
     }
 
@@ -31,8 +35,12 @@ public class Panel : MonoBehaviour
 
         private set
         {
-            var v = Mathf.Clamp(value, 0.1f, 10f);
-            Animator.SetFloat("Speed Multiplier", v);
+            if (value < 0.05f || value > 20f)
+            {
+                Mathf.Clamp(value, 0.05f, 20f);
+            }
+
+            Animator.SetFloat("Speed Multiplier", value);
         }
     }
 
@@ -40,7 +48,15 @@ public class Panel : MonoBehaviour
     {
         get { return Animator.GetInteger("Sign"); }
 
-        private set { Animator.SetInteger("Sign", value); }
+        private set
+        {
+            if (value < -2 || value > 2)
+            {
+                Mathf.Clamp(value, -2, 2);
+            }
+
+            Animator.SetInteger("Sign", value);
+        }
     }
 
     public bool IsBusy
@@ -54,17 +70,17 @@ public class Panel : MonoBehaviour
 
     public void Show()
     {
-        Animator.SetInteger("Sign", 1);
+        Sign = 1;
     }
 
     public void Hide()
     {
-        Animator.SetInteger("Sign", -1);
+        Sign = -1;
     }
 
     public void Open()
     {
-        Animator.SetInteger("Sign", 2);
+        Sign = 2;
     }
 
     public void Open(float speedMultiplier)
@@ -79,7 +95,7 @@ public class Panel : MonoBehaviour
 
     public void Close()
     {
-        Animator.SetInteger("Sign", -2);
+        Sign = -2;
     }
 
     public void Close(float speedMultiplier)
@@ -96,8 +112,8 @@ public class Panel : MonoBehaviour
     {
         Animator = GetComponent<Animator>();
 
-        Background = GetComponent<PanelBackground>();
-        Foreground = GetComponent<PanelForeground>();
+        Background = GetComponentInChildren<PanelBackground>();
+        Foreground = GetComponentInChildren<PanelForeground>();
     }
 
     protected virtual void Start()
