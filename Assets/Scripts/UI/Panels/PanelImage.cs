@@ -6,65 +6,66 @@ public class PanelImage : MonoBehaviour
 {
     public Image Image { get; private set; }
 
-    public Sprite SourceImage
+    public bool Enabled
+    {
+        get { return Image.enabled; }
+
+        private set { Image.enabled = value; }
+    }
+
+    public Sprite Sprite
     {
         get { return Image.sprite; }
+
         set { Image.sprite = value; }
     }
 
     public Color Color
     {
         get { return Image.color; }
+
         set { Image.color = value; }
     }
 
     public Material Material
     {
         get { return Image.material; }
+
         set { Image.material = value; }
     }
 
     public bool IsRaycastTarget
     {
         get { return Image.raycastTarget; }
+
         set { Image.raycastTarget = value; }
+    }
+
+    public float Opacity
+    {
+        get { return Color.a; }
+
+        set
+        {
+            Mathf.Clamp(value, 0f, 1f);
+            Color = new Color(Color.r, Color.g, Color.b, value);
+        }
     }
 
     public void Show()
     {
-        Image.enabled = true;
+        Enabled = true;
     }
 
     public void Hide()
     {
-        Image.enabled = false;
-    }
-
-    public void SetOpacity(float alpha)
-    {
-        if (alpha >= 0 && alpha <= 1)
-        {
-            Color = new Color(Color.r, Color.g, Color.b, alpha);
-        }
-
-        else
-        {
-            throw new System.ArgumentOutOfRangeException("alpha");
-        }
+        Enabled = false;
     }
 
     public void SetOpacity(int alpha)
     {
-        if (alpha >= 0 && alpha <= 255)
-        {
-            var rate = alpha / 255;
-            SetOpacity(rate);
-        }
-
-        else
-        {
-            throw new System.ArgumentOutOfRangeException("alpha");
-        }
+        Mathf.Clamp(alpha, 0, 255);
+        Opacity = (float)alpha / 255;
     }
 
     private void Awake()
