@@ -234,7 +234,6 @@ GameObject:
   - component: {fileID: 356439181}
   - component: {fileID: 356439183}
   - component: {fileID: 356439182}
-  - component: {fileID: 356439184}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -275,7 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f8a13c81ec5141bbb0887663da598c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSpeedMultiplier: 6
+  defaultSpeedMultiplier: 10
 --- !u!95 &356439183
 Animator:
   serializedVersion: 3
@@ -295,56 +294,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &356439184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 356439180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a16858dc68bd4b75bfdd3067efd99cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedMultiplier: 1
-  fontSize: 45
-  showRect:
-    serializedVersion: 2
-    x: 18
-    y: 18
-    width: 540
-    height: 90
-  hideRect:
-    serializedVersion: 2
-    x: 18
-    y: 126
-    width: 540
-    height: 90
-  openRect:
-    serializedVersion: 2
-    x: 18
-    y: 234
-    width: 540
-    height: 90
-  openWithSpeedRect:
-    serializedVersion: 2
-    x: 18
-    y: 342
-    width: 540
-    height: 90
-  closeRect:
-    serializedVersion: 2
-    x: 18
-    y: 450
-    width: 540
-    height: 90
-  closeWithSpeedRect:
-    serializedVersion: 2
-    x: 18
-    y: 558
-    width: 540
-    height: 90
 --- !u!1 &444624749
 GameObject:
   m_ObjectHideFlags: 0
