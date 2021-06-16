@@ -1,8 +1,16 @@
 using UnityEngine;
+using UnityEngine.UI;
 
+[RequireComponent(typeof(Image))]
 [RequireComponent(typeof(Animator))]
 public class Panel : MonoBehaviour
 {
+    [SerializeField]
+    private bool showAtStart;
+
+    [SerializeField]
+    private bool openAtStart;
+
     [SerializeField]
     [Range(0.05f, 20f)]
     private float defaultSpeedMultiplier = 10f;
@@ -114,11 +122,21 @@ public class Panel : MonoBehaviour
 
         Background = GetComponentInChildren<PanelBackground>();
         Foreground = GetComponentInChildren<PanelForeground>();
+
+        InitialSpeedMultiplier = DefaultSpeedMultiplier;
+        SpeedMultiplier = DefaultSpeedMultiplier;
     }
 
     protected virtual void Start()
     {
-        InitialSpeedMultiplier = DefaultSpeedMultiplier;
-        SpeedMultiplier = DefaultSpeedMultiplier;
+        if (showAtStart)
+        {
+            Show();
+        }
+
+        if (openAtStart)
+        {
+            Open();
+        }
     }
 }
