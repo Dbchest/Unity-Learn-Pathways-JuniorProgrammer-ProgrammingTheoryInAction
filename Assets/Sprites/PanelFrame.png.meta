@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 6d28861b346084ee5b6e7ecca10327b1
+guid: b0c3afd72dd7b46fcab754e7725ed6f1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6438341102905252624
-    second: Panel Background_0
+      213: 1645321236646409484
+    second: Panel Foreground_0
   - first:
-      213: 3521893491107727719
-    second: Panel Background_1
+      213: -1829613703058627335
+    second: Panel Foreground_1
   - first:
-      213: -6794506525466879224
-    second: Panel Background_2
+      213: 3969154576751310896
+    second: Panel Foreground_2
   - first:
-      213: -1212846525964066028
-    second: Panel Background_3
+      213: -6093255614568872724
+    second: Panel Foreground_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -77,7 +77,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 256
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -89,7 +89,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 256
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -101,7 +101,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
-    maxTextureSize: 256
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -113,7 +113,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 256
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -127,7 +127,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Panel Background_0
+      name: Panel Foreground_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,14 +141,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01bd67d0f15995950800000000000000
-      internalID: 6438341102905252624
+      spriteID: c0537bb82fa55d610800000000000000
+      internalID: 1645321236646409484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panel Background_1
+      name: Panel Foreground_1
       rect:
         serializedVersion: 2
         x: 90
@@ -162,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7698c3a687740e030800000000000000
-      internalID: 3521893491107727719
+      spriteID: 9f4e001e708eb96e0800000000000000
+      internalID: -1829613703058627335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panel Background_2
+      name: Panel Foreground_2
       rect:
         serializedVersion: 2
         x: 0
@@ -183,14 +183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80b197d505015b1a0800000000000000
-      internalID: -6794506525466879224
+      spriteID: 038b0edde05451730800000000000000
+      internalID: 3969154576751310896
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panel Background_3
+      name: Panel Foreground_3
       rect:
         serializedVersion: 2
         x: 90
@@ -204,8 +204,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41368d4b28a1b2fe0800000000000000
-      internalID: -1212846525964066028
+      spriteID: ce4c7ff4d48607ba0800000000000000
+      internalID: -6093255614568872724
       vertices: []
       indices: 
       edges: []
@@ -213,7 +213,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: f166d815232b040ea918509a1a00237e
+    spriteID: e0ffbdbcd26274a7c8b4d73c953f36a9
     internalID: 0
     vertices: []
     indices: 
