@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PanelIdleStateMachine : StateMachineBehaviour
+public class PanelIdleState : StateMachineBehaviour
 {
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {

@@ -15,12 +15,31 @@ public class Panel : MonoBehaviour
     [Range(0.05f, 20f)]
     private float defaultSpeedMultiplier = 10f;
 
+    public Image Image { get; private set; }
+
+    public float Opacity
+    {
+        get { return Image.color.a; }
+
+        set
+        {
+            var color = Image.color;
+
+            if (value < 0f || value > 1f)
+            {
+                Mathf.Clamp(value, 0f, 1f);
+            }
+
+            Image.color = new Color(color.r, color.g, color.b, value);
+        }
+    }
+
+    public Animator Animator { get; private set; }
+
     public float DefaultSpeedMultiplier
     {
         get { return defaultSpeedMultiplier; }
     }
-
-    public Animator Animator { get; private set; }
 
     public float InitialSpeedMultiplier
     {
@@ -72,9 +91,15 @@ public class Panel : MonoBehaviour
         get { return Animator.GetBool("Is Busy"); }
     }
 
-    public PanelBackground Background { get; private set; }
+    public void SetOpacity(int alpha)
+    {
+        if (alpha < 0 || alpha > 255)
+        {
+            Mathf.Clamp(alpha, 0, 255);
+        }
 
-    public PanelForeground Foreground { get; private set; }
+        Opacity = (float)alpha / 255;
+    }
 
     public void Show()
     {
@@ -118,10 +143,8 @@ public class Panel : MonoBehaviour
 
     protected virtual void Awake()
     {
+        Image = GetComponent<Image>();
         Animator = GetComponent<Animator>();
-
-        Background = GetComponentInChildren<PanelBackground>();
-        Foreground = GetComponentInChildren<PanelForeground>();
 
         InitialSpeedMultiplier = DefaultSpeedMultiplier;
         SpeedMultiplier = DefaultSpeedMultiplier;
