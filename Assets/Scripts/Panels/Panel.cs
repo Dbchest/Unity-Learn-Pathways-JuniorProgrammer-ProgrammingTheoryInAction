@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 [RequireComponent(typeof(Image))]
 [RequireComponent(typeof(Animator))]
-public class PanelBehaviour : MonoBehaviour
+public class Panel : MonoBehaviour
 {
     [SerializeField]
     private bool showAtStart;
