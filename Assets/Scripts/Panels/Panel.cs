@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 [RequireComponent(typeof(Image))]
 [RequireComponent(typeof(Animator))]
+
 public class Panel : MonoBehaviour
 {
     [SerializeField]
