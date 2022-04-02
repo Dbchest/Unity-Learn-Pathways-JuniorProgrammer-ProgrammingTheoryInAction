@@ -2,27 +2,18 @@ using UnityEngine;
 
 public class TextPanelDebugger : MonoBehaviour
 {
-    private string text;
-
-    private TextPanel textPanel { get; set; }
+    private TextPanel TextPanel { get; set; }
 
     private void Awake()
     {
-        textPanel = GetComponent<TextPanel>();
+        TextPanel = GetComponent<TextPanel>();
     }
 
     private void OnGUI()
     {
-        Rect textRect = new Rect(18, 18, 720, 180);
-        text = GUI.TextArea(textRect, text);
+        float padding = 18f;
 
-        Rect buttonRect = new Rect(18, 18 + 180 + 18, 144, 36);
-        if (GUI.Button(buttonRect, "Apply"))
-        {
-            if (textPanel.Text != text)
-            {
-                textPanel.Text = text;
-            }
-        }
+        Rect textRect = new (padding, padding, 720, 180);
+        TextPanel.Text = GUI.TextArea(textRect, TextPanel.Text);
     }
 }

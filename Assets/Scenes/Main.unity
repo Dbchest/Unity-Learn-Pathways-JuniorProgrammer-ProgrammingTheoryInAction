@@ -555,6 +555,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3054919476372206233, guid: ef90a12cc79be4bfa8c8b4927d6a2987, type: 3}
+      propertyPath: m_text
+      value: This is a text panel. It may used to implement visual text components.
+      objectReference: {fileID: 0}
     - target: {fileID: 4288731008297287344, guid: ef90a12cc79be4bfa8c8b4927d6a2987, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -651,6 +655,26 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 5308260580182300320, guid: ef90a12cc79be4bfa8c8b4927d6a2987, type: 3}
+      propertyPath: m_Spacing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5308260580182300320, guid: ef90a12cc79be4bfa8c8b4927d6a2987, type: 3}
+      propertyPath: m_Padding.m_Top
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5308260580182300320, guid: ef90a12cc79be4bfa8c8b4927d6a2987, type: 3}
+      propertyPath: m_Padding.m_Left
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5308260580182300320, guid: ef90a12cc79be4bfa8c8b4927d6a2987, type: 3}
+      propertyPath: m_Padding.m_Right
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5308260580182300320, guid: ef90a12cc79be4bfa8c8b4927d6a2987, type: 3}
+      propertyPath: m_Padding.m_Bottom
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 8976314237683608023, guid: ef90a12cc79be4bfa8c8b4927d6a2987, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
