@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8178686344857887755}
   - component: {fileID: 8178686344857887754}
   - component: {fileID: 8178686344857887765}
-  - component: {fileID: 8178686344857887764}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -98,18 +97,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8178686344857887764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8178686344857887766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f8a13c81ec5141bbb0887663da598c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  showAtStart: 1
-  openAtStart: 0
-  defaultSpeedMultiplier: 10
